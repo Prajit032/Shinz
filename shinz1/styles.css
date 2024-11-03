@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    transition: background-color 1s ease;
+}
+#initial, #forgiveness, #final-message {
+    display: none;
+    text-align: center;
+}
+#sorry-text {
+    height: 200px;
+    overflow-y: scroll;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+#final-message {
+    color: white;
+    font-size: 2rem;
+}
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #008cba;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.btn:hover {
+    background-color: #005f5f;
+}
