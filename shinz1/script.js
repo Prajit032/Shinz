@@ -5,8 +5,8 @@ const resetButton = document.getElementById("resetButton");
 const backgroundAudio = document.getElementById("backgroundAudio");  // Access the audio element
 
 // Optional: Adjust audio properties (you can skip this if you don't need to modify them)
-//backgroundAudio.volume = 30;  // Set volume to 30%
-//backgroundAudio.play();  // Start playing audio immediately when the page loads
+backgroundAudio.volume = 30;  // Set volume to 30%
+backgroundAudio.play();  // Start playing audio immediately when the page loads
 
 // Show hidden love message when "Click Me" is clicked
 loveButton.addEventListener("click", () => {
