@@ -2,7 +2,7 @@
 const loveButton = document.getElementById("loveButton");
 const hiddenMessage = document.getElementById("hiddenMessage");
 const resetButton = document.getElementById("resetButton");
-//const backgroundAudio = document.getElementById("backgroundAudio");  // Access the audio element
+const backgroundAudio = document.getElementById("backgroundAudio");  // Access the audio element
 
 // Optional: Adjust audio properties (you can skip this if you don't need to modify them)
 //backgroundAudio.volume = 30;  // Set volume to 30%
