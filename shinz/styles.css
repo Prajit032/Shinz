@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url(''); /* Change this to your photo's filename */
+    background-image: url('your-photo.jpg'); /* Change this to your photo's filename */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -8,12 +8,12 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.885);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .container {
     text-align: center;
-    background: rgba(153, 18, 18, 0.6); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
     padding: 20px;
     border-radius: 10px;
 }
@@ -42,3 +42,4 @@ button:hover {
     margin-top: 20px;
     font-size: 24px;
 }
+

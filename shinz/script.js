@@ -8,8 +8,9 @@ document.getElementById("yesButton").addEventListener("click", function() {
         let forgiveButton = document.createElement("button");
         forgiveButton.innerText = "Yes, I forgive you!";
         forgiveButton.onclick = function() {
-            responseDiv.innerHTML = "I love you Shinz";
-            forgiveButton.remove();
+            responseDiv.innerHTML = "I love you Shinz ♥️";
+            responseDiv.style.textAlign = "center"; // Center the text
+            forgiveButton.remove(); // Remove the button after clicking
         };
         responseDiv.appendChild(forgiveButton);
     }, 0);
@@ -17,6 +18,6 @@ document.getElementById("yesButton").addEventListener("click", function() {
 
 document.getElementById("noButton").addEventListener("click", function() {
     let responseDiv = document.getElementById("response");
-    responseDiv.innerHTML = "Plz Forgive me! 😊";
+    responseDiv.innerHTML = "That's okay! 😊";
     responseDiv.classList.remove("hidden");
 });

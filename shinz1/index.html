@@ -3,37 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For My Shinzzzzzzz</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Shinz</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Initial Question -->
-    <div id="initial">
-        <h1>Are you the love of my life?</h1>
-        <button class="btn" onclick="loveConfirmation(true)">Yes</button>
-        <button class="btn" onclick="loveConfirmation(false)">No</button>
+    <div class="container">
+        <div class="message-container">
+            <h1 class="main-message">Are You the Love of Prajit's life if Yes click Me</h1>
+            <button id="loveButton" class="btn">Click Me</button>
+        </div>
+        <div class="hidden-message" id="hiddenMessage">
+            <p class="sub-message">I am Sorry for all the mistakes i have ever made. You make my world brighter every day. 💖, I Promise to be with you always</p>
+            <p class="message">"You are my heart, my soul, and everything in between." ❤️</p>
+            <p class="sub-message">I love You with my Everything. Your Gublush this side.</p>
+            <button id="resetButton" class="btn">Go back</button>
+        </div>
     </div>
-
-    <!-- Apology Section -->
-    <div id="apology">
-        <h2>I'm so sorry...</h2>
-        <div id="sorry-text"></div>
-        <button class="btn" onclick="askForgiveness()">Will you forgive me?</button>
-    </div>
-
-    <!-- Forgiveness Section -->
-    <div id="forgiveness">
-        <h1>Will you forgive me?</h1>
-        <button class="btn" onclick="forgivenessConfirmation(true)">Yes</button>
-        <button class="btn" onclick="forgivenessConfirmation(false)">No</button>
-    </div>
-
-    <!-- Final Message -->
-    <div id="final-message">
-        <h1>I loveeeeeeee Youuuuuuuu Myyyyyyy Shinzzzzzzz</h1>
-    </div>
-
-  <script src="script.js"></script>
+    <audio id="backgroundAudio" loop autoplay>
+        <source src="https://pagal.com.in/assets/images/products/Tum_Tak_-_Raanjhanaa_128_Kbps.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <script src="script.js"></script>
 </body>
 </html>
+
+
+
+

@@ -1,38 +1,74 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background and layout */
 body {
+    font-family: 'Helvetica Neue', sans-serif;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-    transition: background-color 1s ease;
-}
-#initial, #forgiveness, #final-message {
-    display: none;
-    text-align: center;
-}
-#sorry-text {
-    height: 200px;
-    overflow-y: scroll;
-    font-size: 1.2rem;
-    margin-top: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    background-color: #f9f9f9;
-}
-#final-message {
+    background-image: url(https://tse3.mm.bing.net/th?id=OIP.XuWKzv7h9SDlA7ulhf6exgHaEK&pid=Api&P=0&h=220); /* Use your image */
+    background-size: cover;
+    background-position: center;
     color: white;
-    font-size: 2rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
-.btn {
-    padding: 10px 20px;
-    font-size: 1rem;
-    margin-top: 20px;
-    cursor: pointer;
-    background-color: #008cba;
+
+/* Centering the content */
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay for readability */
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.message-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+.sub-message {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    animation: fadeIn 3s ease-out;
+}
+
+.hidden-message {
+    display: none;
+}
+
+.message {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    animation: fadeIn 4s ease-out;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #ff4081;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-.btn:hover {
-    background-color: #005f5f;
+
+button:hover {
+    background-color: #e91e63;
+}
+
+/* Animation for fading text */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
